@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon</title>
+</head>
+<body>
+<h1><center>Đây Là Trang Mua Bán Tàng Trữ Vũ Khí</center></h1>
+<h3><center>Nơi Đây Chỉ Dành Cho Thanh Niên 18+</center></h3>
+<h3><center>Có Tiền Thì Mua Ok Babe</center></h3>
+
+<center>
+    {% for pvc in pvcs %}
+        <img src="{{ pvc.image }}" alt="">
+        <h3>{{ pvc.title }}</h3>
+        <p>{{ pvc.price }}</p>
+    {% endfor %}
+</center>
+</body>
+</html>
